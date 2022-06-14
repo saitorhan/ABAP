@@ -26,3 +26,7 @@ WRITE :
 /'Harç Miktarı:' , p_HARC, p_PBIRIM,
 /'Yaşı' , p_YAS , p_BIRIM ,
 /'Bölümü:', P_BOLUM.
+
+
+PERFORM selam(zudemy05).
+PERFORM selam IN PROGRAM zudemy05.

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Udemy gonksiyon grubu</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_UDEMYTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_UDEMY</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_GET_BOOKS</FUNCNAME>
+     <SHORT_TEXT>Bilet bilgilerini getir</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATE1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>S_BDATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATE2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>S_BDATE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>GTBOOKS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTBOOKS</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>S_COUNT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>WEEKDAYS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZWEEKDAYS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOT_FOUNT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATE1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>İlk tarih</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATE2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>İkinci tarih</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GTBOOKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Books</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_COUNT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WEEKDAYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Weekdays</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_FOUNT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Kayıt Bulunamadı</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
